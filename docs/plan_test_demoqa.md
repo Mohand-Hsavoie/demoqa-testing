@@ -21,4 +21,11 @@
 ## 4. Environnement  
 - OS : Windows 11  
 - Navigateurs : Chrome 125+  
-- URL : https://demoqa.com/text-box  
+- URL : https://demoqa.com/text-box
+## 5. Cas de Test Détaillés
+
+| ID  | Description           | Étapes                                                                 | Données de Test         | Résultat Attendu          | Statut     |
+|-----|-----------------------|-----------------------------------------------------------------------|-------------------------|---------------------------|------------|
+| TC1 | Saisie valide         | 1. Remplir "Full Name"<br>2. Remplir "Email" valide<br>3. Cliquer "Submit" | Nom="John Doe"<br>Email="john@test.com" | Données affichées en bas. | ✅ Validé  |
+| TC2 | Email invalide        | 1. Remplir "Email" avec "john"<br>2. Cliquer "Submit"                     | Email="john"            | Bordure rouge du champ.   | ✅ Validé  |
+| TC3 | Champ "Full Name" vide| 1. Laisser "Full Name" vide<br>2. Cliquer "Submit"                        | Nom=""                  | Le formulaire bloque l'envoi. | 🔄 À tester |
