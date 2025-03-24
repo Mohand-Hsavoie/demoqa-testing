@@ -1,0 +1,4 @@
+ID,Description,Étapes,Données de Test,Résultat Attendu,Statut
+TC1,"Saisie valide","1. Remplir le champ 'Full Name'<br>2. Remplir le champ 'Email' valide<br>3. Cliquer sur 'Submit'","Nom=John Doe<br>Email=john@test.com","Les données s'affichent dans la section 'Output'","✅ Validé"
+TC2,"Email invalide","1. Remplir le champ 'Email' avec 'john'<br>2. Cliquer sur 'Submit'","Email=john","Bordure rouge du champ email","✅ Validé"
+TC3,"Champ 'Full Name' vide","1. Laisser 'Full Name' vide<br>2. Cliquer sur 'Submit'","Nom=<vide>","Le formulaire ne soumet pas","🔄 À tester"
